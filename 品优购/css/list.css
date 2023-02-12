@@ -1,0 +1,119 @@
+/* 列表页专有的css */
+
+.nav {
+    overflow: hidden;
+}
+
+.sk {
+    position: absolute;
+    left: 190px;
+    top: 40px;
+    border-left: 1px solid #c81523;
+    padding: 3px 0 0 14px;
+}
+
+.sk_list {
+    float: left;
+}
+
+.sk_list ul li {
+    float: left;
+}
+
+.sk_list ul li a {
+    display: block;
+    line-height: 49px;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.sk_con {
+    float: left;
+}
+
+.sk_con ul li {
+    float: left;
+}
+
+.sk_con ul li {
+    display: block;
+    line-height: 47px;
+    padding: 0 20px;
+    font-size: 14px;
+}
+
+.sk_con ul li:last-child a::after {
+    content: '\e91e';
+    font-family: 'icomoon';
+}
+
+.sk_bd ul li {
+    float: left;
+    width: 285px;
+    height: 460px;
+    padding: 2px;
+    border: 1px solid #c81523;
+    margin: 5px;
+}
+
+.sk_bd ul li img {
+    width: 280px;
+    transition: all 0.5s;
+}
+.sk_bd ul li img:hover {
+    transform: translateY(-8px);
+}
+
+.sk_bd ul li p {
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.sk_bd ul li p>.style_red {
+    font-size: 18px;
+}
+
+.sk_bd ul li p>.style_red {
+    font-size: 20px;
+}
+
+.sk_bd ul li p i {
+    text-decoration: line-through;
+}
+
+.sk_bd ul li p .dibu {
+    font-size: 10px;
+    color: rgb(173, 170, 170);
+    font-weight: 700;
+}
+
+.sk_bd ul li p .yii {
+    display: inline-block;
+    width: 135px;
+    height: 12px;
+    line-height: 10px;
+    border: 1px solid #c81623;
+    border-radius: 5px;
+}
+
+.sk_bd ul li p .yii>i {
+    display: inline-block;
+    width: 30px;
+    height: 10px;
+    background-color: #c81623;
+    border-radius: 5px 0 0 5px;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    clear: both;
+    display: block;
+    content: ".";
+    height: 0;
+}
+
+.bianda:hover img {
+transform: scale(1.5,1.5);
+}

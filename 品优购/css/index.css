@@ -1,0 +1,300 @@
+.main {
+    position: relative;
+    width: 980px;
+    height: 455px;
+
+    margin-left: 220px;
+    margin-top: 10px;
+}
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    z-index: 3;
+}
+.arrow-l {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.arrow-r {
+    right: 13px;
+    margin-right: -15px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+   overflow: hidden;
+}
+.focus ul  {
+    position: absolute;
+    width: 600%;
+}
+.focus ul li {
+    float: left;
+}
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 10px;
+    height: 10px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+.newflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+
+}
+
+.new {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news_hd {
+    height: 33px;
+    border-bottom: 1px dotted #e4e4e4;
+    line-height: 33px;
+    padding: 0 15px;
+}
+
+.news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news_hd .more {
+    float: right;
+}
+
+.news_hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news_bd {
+    padding: 5px 15px 0;
+}
+
+.news_bd ul li {
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.lifeservice {
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+    background: url(../images/icons.png) no-repeat -19px -15px;
+
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+/* 推荐模块 */
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 206px;
+    background-color: #5c5251;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.recom_hd p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd li:nth-child(-n+3)::after {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    content: '';
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+/* 猜你喜欢mokuai */
+.hn {
+    height: 36px;
+    margin-top: 20px;
+}
+
+.huant {
+    float: left;
+    height: 36px;
+}
+
+.huant h2 {
+    font-weight: 400;
+}
+
+.huanw {
+    float: right;
+}
+.hd {
+    height: 231px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+.hd ul li  {
+    position: relative;
+    float: left;
+    width: 196px;
+}
+.hd ul li .qian {
+font-size: 18px;
+color: red;
+}
+.hd ul li:nth-child(-n+5)::after {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    content: '';
+    width: 1px;
+    height: 195px;
+    background-color: #ddd;
+}
+/* 家用电器模块 */
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+.box_hd .tab_list {
+    float: right;
+    line-height: 30px;
+}
+.box_hd .tab_list ul li {
+    float: left;
+}
+.box_hd .tab_list ul li a {
+    margin: 0 15px;
+}
+.floor .w {
+    margin-top: 30px;
+}
+.box_bd {
+    height: 361px;
+
+}
+.tab_list_item>div {
+    float: left;
+    height: 361px;
+}
+.col_210 {
+    width: 210px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+.col_210 ul {
+    margin-left: 12px;
+}
+.col_210 ul li {
+    float: left;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 34px;
+}
+.col_329 {
+    width: 329px;
+}
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+.col_219 {
+    width: 219px;
+}
+.bb {
+    /* 一般情况下，a如果包含有宽度的盒子，a需要转换为块级元素。 */
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
