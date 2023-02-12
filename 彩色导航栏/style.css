@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222339;
+}
+.navigation {
+    position: relative;
+    width: 400px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    border-radius: 10px;
+}
+.navigation ul {
+    position: relative;
+    display: flex;
+    width: 350px;
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a {
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+font-weight: 500;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    font-size: 1.5em;
+    line-height: 75px;
+    color: rgba(255,255,255,.6);
+}
+.navigation ul li:hover a .icon {
+    color: rgba(255,255,255,1);
+
+}
+.navigation ul .active a .icon {
+    transform: translateY(-8px);
+    color: #29fd53;
+}
+.navigation ul li a .text {
+     position: absolute;
+     font-weight: 600;
+     font-size: .5em;
+     color: #222339;
+     display: none;
+     /* color: #fff; */
+     transition: .5s;
+     letter-spacing: .1em;
+     text-transform: uppercase;
+     transform: translateY(0px);
+}
+.navigation ul .active a .text {
+    display: block;
+     transform: translateY(15px);
+     opacity: 1;
+}
+.indicator {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.indicator::before {
+     content: '';
+     position: absolute;
+     bottom: 10px;
+     width: 105%;
+     height: 14px;
+     background: #29fd53;
+     border-radius: 10px;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 7.5px;
+    height: 7.5px;
+    border-radius: 50%;
+    background: #333;
+    box-shadow: 0 0 0 2px #29fd53,
+    50px 50px #29fd53,
+    40px 0 #29fd53,
+    0 43px #29fd53;
+    transform: rotate(45deg);
+    animation: animate 2.2s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0%,100% {
+    transform: rotate(35deg);
+    }
+    50% {
+    transform: rotate(55deg);
+    }
+    
+}
+/* 移动是由当前active所在的位置进行动画移动 */
+
+.navigation ul li:nth-child(2).active ~.indicator {
+    transform: translateX(calc(70px * 1));/*70px是方位(坐标),而不是移动70px*/
+}
+.navigation ul li:nth-child(3).active ~.indicator {
+    transform: translateX(calc(70px * 2));
+}
+.navigation ul li:nth-child(4).active ~.indicator {
+    transform: translateX(calc(70px * 3));
+}
+.navigation ul li:nth-child(5).active ~.indicator {
+    transform: translateX(calc(70px * 4));
+}
+
