@@ -1,0 +1,96 @@
+// 首页的样式less文件
+@import url(common.less);
+
+// @import 导入的意思 可以吧一个样式文件导入到另外一个样式文件里面
+// link 是吧一个样式文件映入到html页面里
+@basefont: 50;
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F2F2F2;
+}
+
+.search-cont {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+    width: 15rem;
+    height: (88rem/@basefont);
+    background-color: #ffc001;
+
+    .classify {
+        width: (44rem/@basefont);
+        background: url(../images/移动web开发-rem布局案例素材/classify.png) no-repeat;
+        background-size: (44rem/@basefont) (70rem/@basefont);
+        margin: (11rem/@basefont) (25rem/@basefont) (7rem/@basefont) (24rem/@basefont);
+    }
+
+    .search {
+        flex: 1;
+        input {
+            width: 100%;
+            outline: none;
+            height: (66rem/@basefont);
+            border-radius: (33rem/@basefont);
+            border: 0px;
+            background-color: #fff2cc;
+            margin-top: (11rem/@basefont);
+            padding-left: (55rem/@basefont);
+            font-size: (25rem/@basefont);
+            color: #757575;
+        }
+    }
+
+    .login {
+        width: (75rem/@basefont);
+        height: (70rem/@basefont);
+        margin: (10rem/@basefont);
+        font-size: (25rem/@basefont);
+        text-align: center;
+        color: #fff;
+        line-height: (70rem/@basefont);
+    }
+    
+}
+// banner
+.banner {
+    width: (750rem/@basefont);
+    height: (368rem/@basefont);
+    img {
+        width: 100%;
+    }
+}
+.ad {
+    display: flex;
+    a {
+        flex: 1;
+        img {
+            width: 100%;
+        }
+    }
+}
+nav {
+    // width: (750rem/@basefont);
+    a {
+        float: left;
+        width: (150rem/@basefont);
+        height: (140rem/@basefont);
+        text-align: center;
+        img {
+            display: block;
+            width: (82rem/@basefont);
+            height: (82rem/@basefont);
+            margin: (10rem/@basefont) auto (-10rem/@basefont);
+        }
+        span {
+            font-size: (25rem/@basefont);
+            color: #333;
+        }
+    }
+}
